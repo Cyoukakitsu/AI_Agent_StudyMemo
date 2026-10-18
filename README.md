@@ -1,31 +1,24 @@
-# 📘 AI Agent 学习笔记仓库
+# AI Agent 学习笔记
 
-本仓库用于记录我在 **AI Agent 方向** 的系统学习过程与实践内容。
+本仓库用于记录我在 **AI Agent 方向** 的学习过程与代码实践，每个项目一个独立文件夹，持续更新。
 
----
+## 项目列表
 
-## 📚 当前学习内容
+| 目录 | 内容 | 技术栈 |
+|------|------|--------|
+| [01-Agent_react](./01-Agent_react) | 从零实现最小 ReAct Agent：Thought → Action → Observation 循环，内置计算器 / 时间 / 字数统计三个工具 | TypeScript、OpenRouter（OpenAI 兼容接口） |
 
-### 📖 CS146S 课程学习笔记（进行中）
+每个项目目录内有自己的 `Readme.md`（运行方式）和 `logic.txt`（代码逻辑图）。
 
-记录 CS146S 课程中的：
+## 运行方式
 
-- 核心概念理解
-- 代码实践
-- 每周学习总结
+以 `01-Agent_react` 为例：
 
----
+```bash
+cd 01-Agent_react
+npm install
+cp .env.example .env   # 填入 OPENROUTER_API_KEY
+npm start
+```
 
-### 🤖 Hello Agent（准备学习）
-
-用于实践 **从 Prompt → Agent 的完整构建过程**
-
-目标：
-
-- 理解 Agent 运行机制
-- 掌握 Tool Calling
-- 构建可执行的 AI 工作流
-
----
-
-持续更新中 🚀
+密钥只放在本地 `.env`，已被 `.gitignore` 排除，不会提交。

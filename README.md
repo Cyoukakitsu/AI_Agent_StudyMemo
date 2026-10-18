@@ -7,8 +7,9 @@
 | 目录 | 内容 | 技术栈 |
 |------|------|--------|
 | [01-Agent_react](./01-Agent_react) | 从零实现最小 ReAct Agent：Thought → Action → Observation 循环，内置计算器 / 时间 / 字数统计三个工具 | TypeScript、OpenRouter（OpenAI 兼容接口） |
+| [02-Plan-and-Execute](./02-Plan-and-Execute) | 在 ReAct 外加一层 Planner：先拆成 3–7 步计划，再逐步执行（单步复用 ReAct 循环），失败时重规划，最后汇总 | TypeScript、OpenRouter（OpenAI 兼容接口） |
 
-每个项目目录内有自己的 `Readme.md`（运行方式）和 `logic.txt`（代码逻辑图）。
+每个项目目录内有自己的 `Readme.md`（运行方式、逻辑图），部分项目另附 `logic.txt` 和 `log.txt`（运行日志）。
 
 ## 运行方式
 

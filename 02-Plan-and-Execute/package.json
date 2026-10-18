@@ -1,0 +1,16 @@
+{
+  "name": "plan-and-execute",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^7.36.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

@@ -6,10 +6,6 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
 
-    /* ---------- 目录布局 ---------- */
-    "rootDir": "src",
-    "outDir": "dist",
-
     /* 显式声明需要加载的全局类型包，避免依赖自动发现行为 */
     "types": ["node"],
 
@@ -33,8 +29,11 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "declaration": false,
-    "removeComments": false
+    "removeComments": false,
+
+    /* 本配置只做类型检查（含测试文件）；实际产物由 tsconfig.build.json 负责 */
+    "noEmit": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

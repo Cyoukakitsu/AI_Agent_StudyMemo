@@ -1,0 +1,11 @@
+{
+  /* 构建专用配置：只编译 src/，不把测试文件带进 dist/ */
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "tests"]
+}

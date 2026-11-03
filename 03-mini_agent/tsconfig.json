@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* ---------- 语言与运行时目标 ---------- */
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* ---------- 目录布局 ---------- */
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* 显式声明需要加载的全局类型包，避免依赖自动发现行为 */
+    "types": ["node"],
+
+    /* ---------- 严格性 ---------- */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+
+    /* ---------- 模块语义 ---------- */
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ---------- 产物与体验 ---------- */
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declaration": false,
+    "removeComments": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

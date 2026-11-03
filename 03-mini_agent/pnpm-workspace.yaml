@@ -1,0 +1,5 @@
+# pnpm 12 项目级设置。
+# allowBuilds: 显式批准哪些依赖可以执行安装期构建脚本（postinstall）。
+# tsx 依赖 esbuild，其安装脚本需要被批准，否则 pnpm 会以 ERR_PNPM_IGNORED_BUILDS 中断安装。
+allowBuilds:
+  esbuild: true
